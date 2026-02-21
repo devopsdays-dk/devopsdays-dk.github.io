@@ -1,0 +1,4 @@
+Build from devopsdays-dk/devopsdays.dk
+Tag: 0.10.0
+Commit: 0a3e2522654f9fc35343092415af5ace6cb6c66d
+CNAME: www.devopsdays.dk
