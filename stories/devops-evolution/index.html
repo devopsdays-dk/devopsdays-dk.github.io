@@ -1,0 +1,1033 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>DevOps Evolution - DevOpsDays</title>
+<meta name="description" content="What is DevOps — we have discussed this since the #DevOps hashtag was first used, but maybe we don’t need to define it; just reflect on what it embraces">
+
+
+  <meta name="author" content="Lars Kruse">
+  
+  <meta property="article:author" content="Lars Kruse">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="DevOpsDays">
+<meta property="og:title" content="DevOps Evolution">
+<meta property="og:url" content="https://www.devopsdays.dk/stories/devops-evolution/">
+
+
+  <meta property="og:description" content="What is DevOps — we have discussed this since the #DevOps hashtag was first used, but maybe we don’t need to define it; just reflect on what it embraces">
+
+
+
+  <meta property="og:image" content="https://www.devopsdays.dk/assets/images/posts/evolution/devops-evolution.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2025-12-13T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://www.devopsdays.dk/stories/devops-evolution/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="DevOpsDays Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/home/"><img src="/assets/images/dodd_logo_rgb_purple.png" alt=" "></a>
+        
+        <a class="site-title" href="/home/">
+          
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/events/"
+                
+                
+              >Conferences</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/proposals/"
+                
+                
+              >Proposals</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/stories/"
+                
+                
+              >Stories</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/organizers/"
+                
+                
+              >Organizers</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/contact/"
+                
+                
+              >💬</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://www.devopsdays.dk/">
+        <img src="/assets/images/avatars/lakruzz.png" alt="Lars Kruse" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://www.devopsdays.dk/" itemprop="url">Lars Kruse</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Software is Eating the world - we need more software!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Copenhagen, Denmark</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:lars@lakruzz.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="tel:+45 2087 2530" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-phone-square" aria-hidden="true"></i><span class="label">Phone</span></a></li>
+          
+        
+          
+            <li><a href="https://www.lakruzz.com" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/lakruzz" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/lakruzz" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="DevOps Evolution">
+    <meta itemprop="description" content="What is DevOps — we have discussed this since the #DevOps hashtag was first used, but maybe we don’t need to define it; just reflect on what it embraces">
+    <meta itemprop="datePublished" content="2025-12-13T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="https://www.devopsdays.dk/stories/devops-evolution/" itemprop="url">DevOps Evolution
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          12 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#devops-evolution">DevOps Evolution</a></li><li><a href="#the-devops-timeline">The DevOps Timeline</a><ul><li><a href="#2008--2015-branching-strategies-and-automation-pipelines">2008 – 2015 Branching Strategies and Automation Pipelines</a></li><li><a href="#2015--2020-containerization-and-num3er5--the-split">2015 — 2020 Containerization and NUM3ER5 — The split</a></li><li><a href="#2020--2023-serverless-full-stack-and-devx">2020 — 2023 Serverless, Full-stack and DevX</a></li><li><a href="#2024---i-dare-you--say-ai-one-more-time">2024 — … I Dare You — Say ‘AI’ One More Time</a></li></ul></li><li><a href="#contemporary-devops-buzzes">Contemporary DevOps buzzes</a></li></ul>
+            </nav>
+          </aside>
+        
+        
+<div class="pic caption center full top">
+  
+  
+    <img src="/assets/responsive/1020/devops-evolution.jpg" srcset="/assets/responsive/255/devops-evolution.jpg 255w,/assets/responsive/510/devops-evolution.jpg 510w,/assets/responsive/1020/devops-evolution.jpg 1020w," alt="DevOps Evolution" class="pic center full top" />What is DevOps — we have discussed this since the #DevOps hashtag was first used, but maybe we don't need to define it; just reflect on what it embraces</div>
+
+<h2 id="devops-evolution">DevOps Evolution</h2>
+
+<p class="kicker"><em>“What is DevOps?”</em> — we have discussed this since the concept hatched in ~2008, but maybe we don’t need to actually define it; just reflect on what DevOps encompasses and embrace it all in the our <em>Community of Contemporary DevOps</em></p>
+
+<p>I set out to write this post with the intent of guiding <a href="../become-a-speaker">potential speakers</a> at our conferences in the commonly asked question:</p>
+
+<blockquote>
+  <p><em>“Is my topic fit for the DevOps Conference?”</em></p>
+</blockquote>
+
+<p>The post still serves that purpose but it also double a good read for <em>participants</em> at our conferences in getting a feel for what the content of our conferences could entail.</p>
+
+<p>It even triples as an invite to <em>practitioners</em> of everyday “dev” and “ops” chores to see that their skills are indeed <em>DevOpsy</em> and unite with peer, masters and apprentices under our DevOps banner.</p>
+
+<p><a href="https://slack.devopsdays.dk" class="btn btn--success" target="_blank" title="Open to all">Join our slack</a></p>
+
+<h2 id="the-devops-timeline">The DevOps Timeline</h2>
+
+<p>DevOps was <em>invented</em> as Twitter hashtag <code class="language-plaintext highlighter-rouge">#DevOps</code> for a conference on <em>Agile Infrastructure</em> in 2009 in Ghent. Already the year after, the same recurring conference was branded as <strong>DevOpsDays</strong>. And here we are!</p>
+
+<p>But hey: <em>“isn’t agile dead?”</em> you might ask. And if that is the case isn’t DevOps dead too then?</p>
+
+<p>Well; <em>“NO! — no one died”</em>. But it’s right to question if DevOps is <em>the same</em> as when it was hatched in 2008 — it’s not. DevOps has evolved a lot and you have a standing invitation to join the community and both contribute and challenge the what DevOps really is.</p>
+
+<h3 id="2008--2015-branching-strategies-and-automation-pipelines">2008 – 2015 Branching Strategies and Automation Pipelines</h3>
+
+<p>Paul Duvall published a book “Continuos Integration” in 2007 and Humble and Farley published “Continuous Delivery” in 2010 The were both in A&amp;W’s “Marting Fowler Signature Series”. And while DevOps doesn’t have an actual widely accepted manifest like the Agile paradigm have, these two books are the closest we come to a common ground the DevOps paradigm. Due to the endorsement from Martin Fowler one of the Agile Manifesto’s Founding Fathers and a widely recognized Agile movement celebrity the tie between Agile and DevOps was undeniable — especially in the early years.</p>
+
+<p>“CI/CD” became a synonym with DevOps. The Jenkins CI server; Kohsuke Kawaguchi’s masterpiece of a configurable and expandible Open Source build automaton platform was the most novel concept introduced to Software Development since the introduction of Object Oriented programming. Jenkins CI was forked off of Hudson in 2011. It was a story of David fighting Goliath (Kohsuke vs Oracle). <em>Everyone</em> should have Jenkins Ci server.</p>
+
+<h3 id="2015--2020-containerization-and-num3er5--the-split">2015 — 2020 Containerization and NUM3ER5 — The split</h3>
+
+<p>Docker was release in 2013, an astronomical evolution step in IT by itself. Cloud Native Foundation and Kubernetes were co-released in 2015 and it’s fair to say that the World hasn’t been the same since. The DevOps community was the first to embraces containerization as <em>unconditionally good</em>.</p>
+
+<p>DevOps ❤️ Containers. Concepts like <em>Configuration as Code</em> and <em>Infrastructure as Code</em> became hot topics. Tools like Terraform and Helm emerged to make infrastructure programmable and reproducible, transforming how operations teams provisioned and managed cloud resources at scale.</p>
+
+<p>Observability matured alongside containerization. Prometheus and the ELK stack made it possible to see into distributed systems in ways we’d never imagined. And Google’s Site Reliability Engineering (SRE) handbook in 2016 introduced a distinct philosophy that automation and data-driven operations are the path forward. DevSecOps also emerged as a trend, advocating that security couldn’t be bolted on at the end—it had to be woven through the entire delivery pipeline.</p>
+
+<p>In the early days on the DevOps movement it attracted more “devs” and less “ops”. Now with the containerization and orchestration perspective, DevOps built a home in the Cloud and all the “ops” could see themselves as first class citizens there. Yet as cloud costs spiraled, FinOps emerged around 2019 as a counterbalance —  reminding us that fast deployment means nothing if you’re hemorrhaging money on idle resources.</p>
+
+<p>In the early days of DevOps the sentiment was that “DevOps is a culture — breaking down silos” Gene Kim was an important avantgarde for this perspective. It was also in 2015 Gene Kim release the novel “The Phoenix Projects” which won wide recognition as the “DevOps New Testament”. We would proudly parade doctrines like “DevOps is Culture” and “DevOps is not a team — It’s a way of working”</p>
+
+<p>In 2018 Kim joined forces with an old DevOps celeb; Jez Humble and a new protégé Nicole Forsgren — a number-crusher magician and they jointly release a new book “Accelerate” in 2018 explaining the rationale behind the <em>DevOps Research and Assessment institute</em> (DORA) report which they had released annually since 2014.</p>
+
+<p>DORA offered a clean <em>lean</em> perspective on DevOps and Continuous Delivery. Focusing on lead-times, value stream optimization, build-quality in, Throughput and Stability advocating that we should analyze and optimize our workflows based on actual NUM3ER5 pulled from the system.</p>
+
+<p>During this period DevOps as a concept formed two new distinct schools - on top of the already established “DevOps is CI/CD” and “DevOps is Culture” ones. We had arrived at a somewhat ambiguous point:</p>
+
+<ul>
+  <li>“DevOps is CI/CD”</li>
+  <li>“DevOps is Culture”</li>
+  <li>“DevOps is Programmable and Immutable Infrastructure”</li>
+  <li>“DevOps is lean software development stream optimization”</li>
+</ul>
+
+<p>A split was emerging. KubeCon and Cloud Native Foundation — although considered inherently <em>good</em> also offered a cleaner alternative home for all the “ops” and a good portion of them moved out of the house and never looked back.</p>
+
+<p>The DevOps movement was once again in jeopardy of being a <em>mostly “devs”</em> community.</p>
+
+<h3 id="2020--2023-serverless-full-stack-and-devx">2020 — 2023 Serverless, Full-stack and DevX</h3>
+
+<p>Firebase (Google), Supabase (PostgreSQL), Cloud Functions(Azure), Lambda function (Amazon) all matured quickly in the new containerized world and soon offered a compelling NoOps alternative to <em>servers</em> without the need to become a Docker expert on the side. Embraced by millennials and zoomers who — in the mean time — had been thought in uni that full-stack=MERN<sup id="fnref:mern"><a href="#fn:mern" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> stack.</p>
+
+<p>GitHub release CodeSpaces in 2020, a web based NoOps extension based on devcontainers (2019) also natively supported by VS Code, and myriads of other Open Source IDE spin-offs. Containers were no longer exclusive to <em>cloud</em> and <em>infrastructure</em> nerds. They regained relevance to <em>all</em> developers in an emerging Developer Experience (DevX) trend. Where event the Development environment, the IDE and the <em>workflows</em> were containerized too. The shift to remote-first work — obviously driven forcefully by the COVID pandemic — accelerated this adoption. Teams distributed across geographies embraced containerized development environments as a way to ensure consistency and reduce friction.</p>
+
+<p>Nowadays <em>every</em> develop can hack a Docker file, setup their own declarative pipeline in yaml and deploy to some abstraction of an <em>infrastructure</em> in the cloud.</p>
+
+<p>The DevOps proverb “You Build It You Run It” is now widely embraced even by the new generations, although not entirely the way the boomers and Gen-X that inhabited the Devops world had anticipated. The apprentice surpass the master. But hey, isn’t that what all <em>true</em> masters unselfishly hope to aspire in there apprentices?</p>
+
+<p>The fresh blood and young minds were welcomed into the DevOps community.</p>
+
+<p>DevOps isn’t dead — it’s simply the new normal.</p>
+
+<h3 id="2024---i-dare-you--say-ai-one-more-time">2024 — … I Dare You — Say ‘AI’ One More Time</h3>
+
+<p>GitHub released Co-Pilot for technical preview in February 2021 and it was made publicly available for subscriptions in June 2022. Already in 2024 both DORA, Stack Exchange and GitClear could reveal convincing statistical proof that AI is jeopardizing the overall quality of mankind’s joint codebase at a speed that no one could have predicted.</p>
+
+<p>At the same time AI, Vibe Coding and Prompt Engineering is — apparently — enabling DevOps core values like <em>fast feedback loops with end-users</em> and <em>breaking down silos</em>, by allowing Citizen Developers and self-made hackers to produce — apparently — ruining code at a pace that also no one could have predicted.</p>
+
+<p>Developers cry out – “code quality is as risk” and while the do, the LLM’s are improving at a speed that exceed even the most farfetched Science Fiction.</p>
+
+<p>The “Terminator Trilogy” dystopias may turn out to be unambitious compared to real-life.</p>
+
+<p>The DevOps community keep focus on Developer Experience and Continuous Delivery and DevOps core values like <em>maintainability</em>, <em>security</em>, <em>reliability</em> are up for being redefined in the AI era.</p>
+
+<p>We take it on our shoulders to do that. We obviously don’t know what will hit us next, but we know that we will stay united.</p>
+
+<h2 id="contemporary-devops-buzzes">Contemporary DevOps buzzes</h2>
+
+<p class="kicker">Below is a glossary of some of the terms, tools, techniques and concepts that are encompassed in Contemporary DevOps</p>
+
+<dl>
+  <dt>Automation / Autonomation</dt>
+  <dd>
+    <p>Process of automating repetitive tasks to reduce manual effort and human error. Autonomation (automation + autonomy) extends this by enabling systems to make intelligent decisions and self-heal without human intervention.</p>
+  </dd>
+  <dt>Automated Testing</dt>
+  <dd>
+    <p>Practice of writing and running tests programmatically — unit, integration, end-to-end—to validate application behavior continuously, reducing manual testing effort and catching regressions quickly.</p>
+  </dd>
+  <dt>ChatOps</dt>
+  <dd>
+    <p>Practice of executing operational tasks and automations through chat interfaces and bots, bringing visibility to operations work, enabling collaboration, and reducing context-switching between tools.</p>
+  </dd>
+  <dt>Citizen Development</dt>
+  <dd>
+    <p>Empowerment of non-traditional developers to build applications and automations using low-code/no-code platforms and AI assistance, democratizing software creation across the organization.</p>
+  </dd>
+  <dt>Configuration as Code</dt>
+  <dd>
+    <p>Infrastructure and application configuration expressed as versioned code rather than manual setup, enabling reproducibility, auditability, and integration into version control and deployment pipelines.</p>
+  </dd>
+  <dt>Configuration Management</dt>
+  <dd>
+    <p>Practice of systematically tracking, controlling, and applying changes to system configurations across infrastructure and applications, ensuring consistency, auditability, and repeatability in environments.</p>
+  </dd>
+  <dt>Containerization</dt>
+  <dd>
+    <p>Lightweight virtualization technology that packages applications with their dependencies into isolated, portable units. Docker revolutionized this space by making containers accessible to mainstream development teams.</p>
+  </dd>
+  <dt>Continuos Integration</dt>
+  <dd>
+    <p>A set of branching strategies and work disciplines that advocates and encourages teams to keep the main integration branch  <em>always shippable</em> — sometimes also referred to as Trunk-based development.</p>
+  </dd>
+  <dt>Continuous Delivery</dt>
+  <dd>
+    <p>A software development practice that lends from lean principles and advocates that quality should be controlled at the source and automated one-piece flows should carry the changes all the way to actual deployment in production.</p>
+  </dd>
+  <dt>Culture and Silos</dt>
+  <dd>
+    <p>DevOps principle that technical practices alone cannot succeed without cultural shifts breaking down barriers between development and operations, enabling collaboration and shared ownership.</p>
+  </dd>
+  <dt>Dashboards / Visualizations</dt>
+  <dd>
+    <p>Real-time displays of system metrics, application performance, and business KPIs that make complex data accessible at a glance, enabling quick decision-making and incident response.</p>
+  </dd>
+  <dt>Declarative Pipelines</dt>
+  <dd>
+    <p>CI/CD approach where pipeline configuration is expressed declaratively—defining desired state rather than imperative steps—enabling version control, reproducibility, and easier maintenance of build and deployment workflows.</p>
+  </dd>
+  <dt>Developer Experience (DevX)</dt>
+  <dd>
+    <p>Holistic approach to improving developers’ satisfaction and productivity through better tooling, workflows, documentation, and environments—recognizing that developer satisfaction drives software quality.</p>
+  </dd>
+  <dt>Developer Platforms &amp; Marketplaces</dt>
+  <dd>
+    <p>Centralized ecosystems (e.g. Backstage, GitHub Marketplace, artifact registries) that discover, share, and manage DevOps tooling, templates, and extensions — enabling knowledge sharing and accelerating adoption of community practices.</p>
+  </dd>
+  <dt>DevContainers</dt>
+  <dd>
+    <p>Development containers specification and tooling that standardize local development environments in containers, ensuring consistency across team members and with CI/CD pipelines.</p>
+  </dd>
+  <dt>DevSecOps</dt>
+  <dd>
+    <p>Integrated practice embedding security throughout the entire software delivery pipeline rather than as a bolted-on afterthought, shifting security left and making it everyone’s responsibility.</p>
+  </dd>
+  <dt>DORA Metrics</dt>
+  <dd>
+    <p>Four key metrics—deployment frequency, lead time for changes, mean time to recovery, and change failure rate—used to measure software delivery performance and organizational effectiveness.</p>
+  </dd>
+  <dt>Emulators / Digital Twins</dt>
+  <dd>
+    <p>Virtual replicas of physical systems or infrastructure that simulate real-world behavior, enabling teams to test, validate, and optimize solutions in safe environments before production deployment.</p>
+  </dd>
+  <dt>Extensions / Plugins</dt>
+  <dd>
+    <p>Ecosystem practice of extending existing platforms — e.g. GitHub Actions, VS Code extensions, Kubernetes operators, Terraform providers — allowing practitioners to contribute reusable solutions and amplify DevOps practices across communities.</p>
+  </dd>
+  <dt>FinOps</dt>
+  <dd>
+    <p>Financial operations discipline for cloud cost management, treating infrastructure spending as a shared responsibility between engineering, finance, and operations to optimize cloud investments.</p>
+  </dd>
+  <dt>FlowTech</dt>
+  <dd>
+    <p>Emerging discipline focused on optimizing developer workflows and productivity by removing friction points, integrating tools, and automating context-switching — extending DevX principles across the entire development lifecycle.</p>
+  </dd>
+  <dt>GitOps</dt>
+  <dd>
+    <p>Operational model using Git as the single source of truth for infrastructure and application configuration, automating deployments when code changes are merged, combining version control with continuous delivery.</p>
+  </dd>
+  <dt>Helm</dt>
+  <dd>
+    <p>Package manager for Kubernetes that simplifies deploying and managing complex applications by bundling manifests, configurations, and dependencies into reusable charts.</p>
+  </dd>
+  <dt>IDE Integrated AI Agents</dt>
+  <dd>
+    <p>AI-powered tools integrated into development environments that generate code suggestions, assist with problem-solving, and augment developer productivity in real-time. Represent both the democratization of coding and emerging quality concerns in the AI era.</p>
+  </dd>
+  <dt>Infrastructure as Code (IaC)</dt>
+  <dd>
+    <p>Practice of managing and provisioning computing infrastructure through machine-readable code rather than physical hardware configuration or interactive tools, enabling version control and automation.</p>
+  </dd>
+  <dt>Internal Developer Platform (IDP)</dt>
+  <dd>
+    <p>Self-service platform built by platform engineering teams that abstracts infrastructure complexity, allowing developers to deploy, scale, and manage applications without deep operational knowledge.</p>
+  </dd>
+  <dt>Kubernetes</dt>
+  <dd>
+    <p>Open-source orchestration platform that automates deployment, scaling, and management of containerized applications across clusters, becoming the de facto standard for container orchestration.</p>
+  </dd>
+  <dt>Lean Software Development</dt>
+  <dd>
+    <p>Software engineering discipline rooted in lean manufacturing principles—emphasizing waste elimination, value stream optimization, fast feedback loops, and continuous improvement. Core philosophy underlying DevOps practices and metrics like DORA.</p>
+  </dd>
+  <dt>Observability</dt>
+  <dd>
+    <p>Practice of understanding complex system behavior through comprehensive data collection—logs, metrics, traces—enabling teams to ask arbitrary questions about system state and quickly diagnose issues.</p>
+  </dd>
+  <dt>Platform Engineering</dt>
+  <dd>
+    <p>Discipline focused on building internal developer platforms that abstract infrastructure complexity, enabling development teams to self-serve while maintaining governance and security.</p>
+  </dd>
+  <dt>Prometheus</dt>
+  <dd>
+    <p>Open-source monitoring and alerting toolkit that scrapes time-series metrics from applications and infrastructure, providing a flexible foundation for observability in cloud-native environments.</p>
+  </dd>
+  <dt>Prompt Engineering</dt>
+  <dd>
+    <p>Skill of crafting effective instructions, RAGs and queries for AI language models to generate useful code, documentation, and solutions—increasingly important as AI tools become integral to DevOps workflows.</p>
+  </dd>
+  <dt>Serverless / FaaS</dt>
+  <dd>
+    <p>Computing model where cloud providers manage infrastructure, allowing developers to deploy functions or code snippets that scale automatically without managing servers or containers.</p>
+  </dd>
+  <dt>Site Reliability Engineering (SRE)</dt>
+  <dd>
+    <p>Google-formulated discipline that applies software engineering approaches to infrastructure and operations problems, emphasizing automation, data-driven decisions, and error budgets for reliability.</p>
+  </dd>
+  <dt>Social Coding</dt>
+  <dd>
+    <p>Collaborative development culture enabled by platforms like GitHub, emphasizing code review, transparent collaboration, knowledge sharing, and distributed contribution — a cultural cornerstone of modern DevOps.</p>
+  </dd>
+  <dt>Static Code Analysis</dt>
+  <dd>
+    <p>Automated examination of source code without executing it, detecting potential bugs, security flaws, and code quality issues early in development, shifting quality checks left in the pipeline.</p>
+  </dd>
+  <dt>Terraform</dt>
+  <dd>
+    <p>Infrastructure as Code tool that enables declarative definition and management of cloud resources across multiple providers, treating infrastructure provisioning as reproducible code.</p>
+  </dd>
+  <dt>Tooling &amp; Scripting</dt>
+  <dd>
+    <p>DevOps practice of building, maintaining, and sharing custom utilities, scripts, and helper tools that operationalize workflows, reduce manual effort, and enable team-specific optimizations and automation.</p>
+  </dd>
+  <dt>Vulnerability Scanning</dt>
+  <dd>
+    <p>Automated process that analyzes code, dependencies, and running systems to identify known security vulnerabilities, enabling proactive remediation before exploits reach production environments.</p>
+  </dd>
+  <dt>You Build It, You Run It</dt>
+  <dd>
+    <p>DevOps philosophy that teams owning code also own its operational aspects and incident response, fostering accountability and enabling faster feedback loops and improvements.</p>
+  </dd>
+</dl>
+
+<hr />
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:mern">
+      <p>MERN: MongoDB - Express - React - Node. A contemporary alternative to the LAMP stack (Linux - Apache - MySql - PHP) <a href="#fnref:mern" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#devops" class="page__taxonomy-item p-category" rel="tag">DevOps</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-12-13T00:00:00+00:00">December 13, 2025</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/stories/sponsor-2026/" class="pagination--pager" title="Become a Sponsor 2026">Previous</a>
+    
+    
+      <a href="/stories/become-a-speaker/" class="pagination--pager" title="Become a Speaker">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+      
+        <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Leave a comment</h4>
+      <section id="giscus-comments"></section>
+    
+</div>
+
+      
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/posts/cfp/dod-24-speaker.jpg" alt="">
+      </div>
+    
+    <h2 style="font-size:smaller;" class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/stories/become-a-speaker/" rel="permalink">Become a Speaker
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <div style="font-size:smaller">
+    
+    
+    
+    
+    </div>
+    
+
+
+
+    <p class="archive__item-excerpt" itemprop="description">Become a speaker at DevOpsDays conferences or one of our meet-up events.
+</p>
+  </article>
+</div>
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/posts/DevOpsDaysAarhus-636.jpg" alt="">
+      </div>
+    
+    <h2 style="font-size:smaller;" class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/stories/sponsor-2026/" rel="permalink">Become a Sponsor 2026
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <div style="font-size:smaller">
+    
+    
+    
+    
+    </div>
+    
+
+
+
+    <p class="archive__item-excerpt" itemprop="description">Become a sponsor at DevOpsDays
+</p>
+  </article>
+</div>
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/index/slack.devopsdays.dk.png" alt="">
+      </div>
+    
+    <h2 style="font-size:smaller;" class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/stories/slack/" rel="permalink">Our own slack
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <div style="font-size:smaller">
+    
+    
+    
+    
+    </div>
+    
+
+
+
+    <p class="archive__item-excerpt" itemprop="description">DevOpsDays Denmark have our own slack at slack.devopsdays.dk
+</p>
+  </article>
+</div>
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/posts/dorith.jpg" alt="">
+      </div>
+    
+    <h2 style="font-size:smaller;" class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/stories/blog-with-us/" rel="permalink">Blogging at devopsdays.dk
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <div style="font-size:smaller">
+    
+    
+    
+    
+    </div>
+    
+
+
+
+    <p class="archive__item-excerpt" itemprop="description">Share or cross post your blogs on devopsdays.dk
+</p>
+  </article>
+</div>
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/devopsdays-dk" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/company/79701062" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://www.devopsdays.dk">DevOpsDays</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.
+
+  <span style="float: right;"><a href="/terms/">Terms of Service</a></span>
+
+
+</div>
+
+
+
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2FM92L1EDB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2FM92L1EDB', { 'anonymize_ip': true});
+</script>
+
+
+
+
+
+
+    <script>
+    'use strict';
+  
+    (function () {
+      var commentContainer = document.querySelector('#giscus-comments');
+  
+      if (!commentContainer) {
+        return;
+      }
+  
+      var script = document.createElement('script');
+      script.setAttribute('src', 'https://giscus.app/client.js');
+      script.setAttribute('data-repo',              'devopsdays-dk/pub-giscus');
+      script.setAttribute('data-repo-id',           'R_kgDOQgbeVg');
+      script.setAttribute('data-category',          'Giscus');
+      script.setAttribute('data-category-id',       'DIC_kwDOQgbeVs4CzQSj');
+      script.setAttribute('data-mapping',           'pathname');
+      script.setAttribute('data-reactions-enabled', '1');
+      script.setAttribute('data-emit-metadata',     '0');
+      script.setAttribute('data-input-position',    'top');
+      script.setAttribute('data-theme',             'purple_dark');
+      script.setAttribute('data-lang',              'en');
+      script.setAttribute('data-loading',           'lazy');
+      script.setAttribute('crossorigin', 'anonymous');
+      script.async = true;
+      commentContainer.appendChild(script);
+    })();
+  </script>
+
+
+  
+
+
+
+
+  </body>
+</html>
